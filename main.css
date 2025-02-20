@@ -1,0 +1,175 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    height: 300px;
+    background: url('banner.jpeg') no-repeat center center/cover;
+    padding: 0 20px;
+    color: white;
+}
+
+header h1 {
+    position: relative;
+    font-size: 70px;
+    border-radius: 10px;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+nav {
+    margin-bottom: 9px;
+}
+
+nav a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+a:hover {
+    background: white;
+    color: black;
+}
+
+#nav-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+}
+
+main {
+    display: flex;
+    margin: 20px;
+    padding: 10px 0px;
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+
+main p {
+    margin: 15px;
+}
+
+main ul {
+    margin-left: 45px;
+}
+
+#projects figure{
+    display: flex;
+    flex-direction: column;
+}
+
+#projects figure:nth-child(odd) {
+    align-items: flex-end;
+}
+
+#projects figure:nth-child(even) {
+    align-items: flex-start;
+}
+
+#screenprinting {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+#screenprinting video {
+    grid-column: span 3;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+#screenprinting figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#screenprinting img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+#contact img {
+    height: 300px;
+    width: auto;
+    display: flex;
+    position: absolute;
+    bottom: 100px;
+    left: 35%;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+footer a {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+    background: white;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 200px;
+    }
+
+        header h1 {
+            font-size: 40px;
+            margin-left: 10%;
+        }
+
+    #nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #screenprinting {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    #screenprinting figure {
+        width: 100%;
+    }
+}
