@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 
 <html lang = "en">
@@ -118,4 +119,145 @@
 
     <script src="main.js"></script>
 </body>
+=======
+<!--
+    Project: portfolio site
+    Author: Owen Rasor
+    Description:  Personal portfolio website showcasing software projects, and screen printing business
+    Changes:
+        - Added disclaimer header
+        - Changed theme in .css
+        - Add toggle theme control
+        - Add mobile responsiveness
+-->
+
+
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Owen Rasor Portfolio</title>
+    <link rel = "stylesheet" href = "./css/main.css">
+    <button id="toggle-theme">Toggle Theme</button>
+</head>
+
+<body>
+    <header>
+        <h1>Owen Rasor</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#" onclick="showSection('about')">About Me</a></li>
+                <li><a href="#" onclick="showSection('projects')">Coding Projects</a></li>
+                <li><a href="#" onclick="showSection('screenprinting')">Screen Printing</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-intro">
+                    <p>
+                        My name is Owen Rasor, and I am a Software Engineering student at Utah Valley University.
+                        In addition to my studies, I have built a small business called XTRAJANK, where I design and
+                        screen print unique apparel. I personally manage everything from design and printing to selling
+                        at local markets. This experience has strengthened my ability to think creatively, solve problems
+                        efficiently, and adapt to new challenges.
+                    </p>
+                    <p>I have worked on a variety of software development projects, including:</p>
+                    <ul>
+                        <li>Memory Simulator (Python, kivy): A virtual machine that executes Basic Machine Language and simulates memory management.</li>
+                        <li>File Transfer Appliction (Python, tkinter): A program for secure and efficient file transfers.</li>
+                        <li>Simple Banking Application (C#): A system for account management.</li>
+                        <li>Circular Buffer (C++): A high performance data structure for managing a fixed-size buffer.</li>
+                    </ul>
+                    <p>
+                        In addition to Python, C++, and C#, I have experience with C, .NET, Kivy, Tkinter, and Git.
+                        I enjoy working on both low-level systems programming and GUI development, allowing me to create
+                        intuitive and functional applications.
+                    </p>
+                    <p>
+                        On the creative side, I have screen printed hundreds of designs on t-shirts,
+                        hoodies, blankets, and tote bags. I find fulfillment in both coding and design, as both
+                        require problem-solving, attention to detail, and innovation.
+                    </p>
+                </div>
+                <div class="about-goals">
+                    <h3>My Goals</h3>
+                    <p>
+                        My goal is to become a software engineer where I can apply my creativity, knowledge, and skills
+                        to build meaningful applications. I am passionate about designing efficient, user-friendly software and
+                        constantly seeking opportunities to grow and learn in the field.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" style="display:none;">
+            <h2>My Coding Projects</h2>
+            <figure>
+                <h3>UVSim</h3>
+                <p>
+                    UVSim is a virtual machine that executes Basic Machine Language. It is given the BML via a .txt file.
+                    This file is validated and stored into the virtual memory. The user has the ability to step through, execute, and save
+                    the program. The memory is displayed on the table to the right and the accumulator and outputs are displayed on the left.
+                    It handles all input errors and runs efficiently.
+                </p>
+            </figure>
+                <figure>
+                <h3>onia File Transfer App</h3>
+                <p>
+                    onia is a file transfer app that receives a file and sends it efficiently via ports to the receiver.
+                    I built onia as an opportunity to understand computer networks better and how ports worked specifically.
+                </p>
+            </figure>
+            <figure>
+                <h3>Bank App</h3>
+                <p>
+                    The bank app I wrote is a very simple app that handles and stores accounts. It verifies deposits and withdrawals for those accounts.
+                    I wrote it to learn and practice C# and .NET.
+                </p>
+            </figure>
+        </section>
+
+        <section id="screenprinting" style="display:none;">
+            <h2>Screen Printing</h2>
+            <video controls>
+                <source src="./img/logo_animation.mp4" type="video/mp4">
+            </video>
+            <figure>
+                <img src="./img/dirtbird.jpg" alt="Dirtbird Shirt">
+                <figcaption>Dirtbird shirt I designed inspired by sea birds.</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/sleuth.jpg" alt="Sleuth Shirt">
+                <figcaption>I designed this shirt after reading a mystery book.</figcaption>
+            </figure>
+            <figure>
+                <img src="./img/booth.JPG" alt="Booth">
+                <figcaption>This is my booth for Hazel Avenue's summer market.</figcaption>
+            </figure>
+        </section>
+
+        <section id="contact" style="display:none;">
+            <h2>Contact Me</h2>
+            <ul>
+                <li><strong>Email:</strong> owen.rasor8@gmail.com</li>
+            </ul>
+            <img src="./img/profile-small.jpg" alt="Me!">
+        </section>
+    </main>
+
+    <footer>
+        <p>Find me on <a href="https://github.com/xtrajank">GitHub</a> | Email: owen.rasor8@gmail.com | <a href="https://www.linkedin.com/in/owen-rasor/">LinkedIn</a></p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+>>>>>>> master
 </html>
