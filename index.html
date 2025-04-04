@@ -2,11 +2,6 @@
     Project: portfolio site
     Author: Owen Rasor
     Description:  Personal portfolio website showcasing software projects, and screen printing business
-    Changes:
-        - Added disclaimer header
-        - Changed theme in .css
-        - Add toggle theme control
-        - Add mobile responsiveness
 -->
 
 
@@ -31,6 +26,7 @@
                 <li><a href="#" onclick="showSection('projects')">Coding Projects</a></li>
                 <li><a href="#" onclick="showSection('screenprinting')">Screen Printing</a></li>
                 <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href='#' onClick="showSection('visitor')">Log Visit</a></li>
             </ul>
         </nav>
     </header>
@@ -129,6 +125,39 @@
             </ul>
             <img src="./img/profile-small.jpg" alt="Me!">
         </section>
+
+        <section id="visitor" style="display:none;">
+            <h2>Visitor Form</h2>
+            <form id="myform" novalidate>
+                <!-- personal info -->
+                <div class="form-flex">
+                    <label>First Name: <input type="text" id="firstName"/><div class="errorMsg"></div></label>
+                    <label>Last Name: <input type="text" id="lastName"/><div class="errorMsg"></div></label>
+                    <label>Address: <input type="text" id="address"/><div class="errorMsg"></div></label>
+                    <label>City: <input type="text" id="city"/><div class="errorMsg"></div></label>
+                    <label>State: <input type="text" id="state"/><div class="errorMsg"></div></label>
+                    <label>Zip: <input type="text" id="zip"/><div class="errorMsg"></div></label>
+                    <label>Phone: <input type="text" id="phone"/><div class="errorMsg"></div></label>
+                    <label>Email: <input type="text" id="email"/><div class="errorMsg"></div></label>
+                </div>
+
+                 <!-- how did you hear -->
+                <p>How did you find my page?</p>
+                <label><input type="checkbox" name="source" value="internet">Internet</label>
+                <label><input type="checkbox" name="source" value="friend">Friend</label>
+                <label><input type="checkbox" name="source" value="google">Google</label>
+                <div class="errorMsg" id="checkboxError"></div>
+
+                <!-- comments -->
+                <label>Comments: <textarea id="comments"></textarea></label>
+
+                <!-- submit -->
+                <button id="submitBtn" type="submit">Submit</button>
+            </form>
+            <div id="thankYou" style="display: none;">
+                <h3>Thank you for your visit!</h3>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -136,5 +165,7 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script src="./js/validation.js"></script>
+    <script src="./js/page.js"></script>
 </body>
 </html>

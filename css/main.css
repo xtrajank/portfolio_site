@@ -174,7 +174,34 @@ footer a:hover {
     padding: 5px;
 }
 
-@media (max-width: 951px) {
+
+.form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-flex label {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.errorMsg {
+    color: red;
+    font-size: 0.8em;
+}
+
+input.was-validated:invalid {
+    border: 1px solid red;
+}
+
+input.was-validated:valid {
+    border: 1px solid green;
+}
+
+@media (max-width: 1090px) {
     header {
         height: 200px;
     }
@@ -198,5 +225,5 @@ footer a:hover {
 
     #screenprinting figure {
         width: 100%;
-    }
+    } 
 }
